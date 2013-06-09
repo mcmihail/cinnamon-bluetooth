@@ -6,9 +6,6 @@
 /* Enable additional debugging at the expense of performance and size */
 #undef GNOME_ENABLE_DEBUG
 
-/* Have AppIndicator */
-#undef HAVE_APP_INDICATOR
-
 /* Define to 1 if you have the <dlfcn.h> header file. */
 #undef HAVE_DLFCN_H
 

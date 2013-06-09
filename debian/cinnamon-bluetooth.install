@@ -7,7 +7,5 @@ usr/bin
 usr/lib/cinnamon-bluetooth/plugins/*.so
 usr/lib/cinnamon-bluetooth/*.so*
 usr/lib/cinnamon-bluetooth/*.typelib
-usr/share/glib-2.0/schemas/
 debian/61-cinnamon-bluetooth-rfkill.rules lib/udev/rules.d/
-debian/bluetooth-applet-unity.desktop etc/xdg/autostart
 etc/xdg

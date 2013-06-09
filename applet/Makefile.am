@@ -18,12 +18,6 @@ AM_CFLAGS += $(APPLET_CFLAGS) $(WARN_CFLAGS) $(DISABLE_DEPRECATED) -DPKGDATADIR=
 
 INCLUDES = -I$(top_srcdir)/lib
 
-if HAVE_APP_INDICATOR
-cinnamon_bluetooth_applet_LDADD += $(APP_INDICATOR_LIBS)
-test_agentdialog_LDADD += $(APP_INDICATOR_LIBS)
-test_icon_LDADD += $(APP_INDICATOR_LIBS)
-INCLUDES += -DHAVE_APP_INDICATOR $(APP_INDICATOR_CFLAGS)
-endif
 
 man_MANS = cinnamon-bluetooth-applet.1
 
