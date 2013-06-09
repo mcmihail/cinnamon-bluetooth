@@ -77,31 +77,6 @@ PKG_CHECK_MODULES(APPLET,
 		  gtk+-3.0 >= $GTK_REQUIRED
 		  libnotify >= $NOTIFY_REQUIRED)
 
-dnl Requires for application indicators
-APPINDICATOR_REQUIRED=0.0.7
-
-AC_ARG_ENABLE(appindicator,
-                        AS_HELP_STRING([--enable-appindicator[=@<:@no/auto/yes@:>@]],[Build support for application indicators ]),
-                        [enable_appindicator=$enableval],
-                        [enable_appindicator="auto"])
-
-if test x$enable_appindicator = xauto ; then
-        PKG_CHECK_EXISTS([appindicator3-0.1 >= $APPINDICATOR_REQUIRED],
-                         enable_appindicator="yes",
-                         enable_appindicator="no")
-fi
-
-if test x$enable_appindicator = xyes ; then
-        PKG_CHECK_EXISTS([appindicator3-0.1 >= $APPINDICATOR_REQUIRED],,
-                         AC_MSG_ERROR([appindicator3-0.1 is not installed]))
-        PKG_CHECK_MODULES(APP_INDICATOR,
-                        appindicator3-0.1 >= $APPINDICATOR_REQUIRED)
-        AC_SUBST(APP_INDICATOR_CFLAGS)
-        AC_SUBST(APP_INDICATOR_LIBS)
-        AC_DEFINE(HAVE_APP_INDICATOR, 1, [Have AppIndicator])
-fi
-AM_CONDITIONAL(HAVE_APP_INDICATOR, test x"$enable_appindicator" = xyes)
-
 dnl Requires for the wizard dialogue
 PKG_CHECK_MODULES(WIZARD,
 		  gmodule-export-2.0
@@ -156,6 +131,5 @@ Configure summary:
 	Compiler Flags..............:  ${CFLAGS}
 	Prefix......................:  ${prefix}
 	GObject-Introspection.......:  ${found_introspection}
-	Application Indicators......:  ${enable_appindicator}
 "
 

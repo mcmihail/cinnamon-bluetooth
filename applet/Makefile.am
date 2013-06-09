@@ -45,11 +45,3 @@ EXTRA_DIST += $(man_MANS) $(autostart_in_in_files) $(ui_DATA)
 
 MAINTAINERCLEANFILES = Makefile.in
 
-if HAVE_APP_INDICATOR
-gsettingsschema_in_files = com.canonical.indicator.bluetooth.gschema.xml.in
-gsettings_SCHEMAS = $(gsettingsschema_in_files:.xml.in=.xml)
-@INTLTOOL_XML_NOMERGE_RULE@
-@GSETTINGS_RULES@
-EXTRA_DIST += $(gsettingsschema_in_files)
-CLEANFILES += $(gsettings_SCHEMAS)
-endif
