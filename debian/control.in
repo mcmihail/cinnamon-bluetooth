@@ -1,0 +1,93 @@
+Source: cinnamon-bluetooth
+Section: gnome
+Priority: optional
+Maintainer: Michael Webster <miketwebster@gmail.com>
+Build-Depends: debhelper (>= 8),
+               cdbs (>= 0.4.93),
+               dh-autoreconf,
+               gnome-common,
+               gnome-pkg-tools,
+               libnotify-dev (>= 0.7),
+               libglib2.0-dev (>= 2.29.90),
+               libgtk-3-dev (>= 3.0.0),
+               libx11-dev,
+               libxi-dev,
+               intltool (>= 0.40.0),
+               libxml2-utils,
+               gtk-doc-tools,
+               yelp-tools,
+               gobject-introspection (>= 0.10.2-1~),
+               libgirepository1.0-dev (>= 0.9.5),
+               libatk1.0-dev (>= 1.32.0-2~),
+               libappindicator3-dev (>= 0.4.90)
+Standards-Version: 3.9.3
+
+Package: cinnamon-bluetooth
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         ${gir:Depends},
+         bluez (>= 4.36),
+         obexd-client,
+         udev (>= 154),
+         consolekit,
+         obex-data-server
+Recommends: gvfs-backends, 
+            gnome-user-share,
+            cinnamon-control-center
+Breaks: nautilus-sendto (<< 3.0),
+        gnome-phone-manager (<< 0.67),
+        network-manager-gnome (<< 0.9.0-3)
+Conflicts: bluez-gnome
+Architecture: linux-any
+Description: Cinnamon Bluetooth tools
+ This package contains tools for managing and manipulating Bluetooth
+ devices using the Cinnamon desktop.
+ .
+ bluetooth-applet provides an agent to ask for PIN and managing pairing with
+ devices, together with bluetooth-properties.
+ .
+ bluetooth-sendto is also included for sending files to Bluetooth devices via
+ OBEX.
+
+Package: libcinnamon-bluetooth1
+Section: libs
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Architecture: linux-any
+Description: Cinnamon Bluetooth tools - support library
+ This package contains tools for managing and manipulating Bluetooth
+ devices using the Cinnamon desktop.
+ .
+ The libraries included provide support to cinnamon-bluetooth.
+
+Package: libcinnamon-bluetooth-dev
+Section: libdevel
+Depends: libcinnamon-bluetooth1 (= ${binary:Version}),
+         gir1.2-cinnamonbluetooth-1.0 (= ${binary:Version}),
+         ${misc:Depends},
+         libgtk-3-dev,
+         libglib2.0-dev
+Suggests: pkg-config
+Priority: extra
+Architecture: linux-any
+Description: Cinnamon Bluetooth tools - support library development files
+ This package contains tools for managing and manipulating Bluetooth
+ devices using the Cinnamon desktop.
+ .
+ The libraries included provide support to cinnamon-bluetooth.
+ .
+ This package contains the development files for libcinnamon-bluetooth
+
+Package: gir1.2-cinnamonbluetooth-1.0
+Section: introspection
+Architecture: linux-any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         ${gir:Depends}
+Description: Introspection data for CinnamonBluetooth
+ This package contains tools for managing and manipulating Bluetooth
+ devices using the Cinnamon desktop.
+ .
+ The libraries included provide support to cinnamon-bluetooth.
+ .
+ This package contains the introspection data for GnomeBluetooth

@@ -1,0 +1,25 @@
+# Description: updated the wording of some of the menu entries
+# Upstream: https://bugzilla.gnome.org/show_bug.cgi?id=669284
+# Ubuntu: https://launchpad.net/bugs/906042
+Index: gnome-bluetooth-3.4.0/applet/popup-menu.ui
+===================================================================
+--- gnome-bluetooth-3.4.0.orig/applet/popup-menu.ui	2012-05-15 15:42:05.000000000 +1200
++++ gnome-bluetooth-3.4.0/applet/popup-menu.ui	2012-05-15 15:44:19.771462585 +1200
+@@ -33,7 +33,7 @@
+ 				</child>
+ 				<child>
+ 					<object class="GtkAction" id="send-file">
+-						<property name="label" translatable="yes">Send files to device...</property>
++						<property name="label" translatable="yes">Send Files to Device…</property>
+ 						<property name="icon-name">document-send</property>
+ 						<signal name="activate" handler="sendto_callback"/>
+ 					</object>
+@@ -47,7 +47,7 @@
+ 				</child>
+ 				<child>
+ 					<object class="GtkAction" id="setup-new">
+-						<property name="label" translatable="yes">Set up new device...</property>
++						<property name="label" translatable="yes">Set Up New Device…</property>
+ 						<signal name="activate" handler="wizard_callback"/>
+ 					</object>
+ 				</child>

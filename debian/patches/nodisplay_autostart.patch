@@ -1,0 +1,14 @@
+Description: Clean up Startup Applications dialog by hiding default apps
+Author: Michael Terry <michael.terry@canonical.com>
+Bug-Ubuntu: https://launchpad.net/bugs/803917
+Forwarded: not-needed
+
+Index: gnome-bluetooth-3.2.2/applet/bluetooth-applet.desktop.in.in
+===================================================================
+--- gnome-bluetooth-3.2.2.orig/applet/bluetooth-applet.desktop.in.in	2011-12-16 12:56:54.000000000 +0100
++++ gnome-bluetooth-3.2.2/applet/bluetooth-applet.desktop.in.in	2012-02-08 12:51:39.975132158 +0100
+@@ -12,3 +12,4 @@
+ X-GNOME-Bugzilla-Component=applet
+ X-GNOME-Bugzilla-Version=@VERSION@
+ AutostartCondition=GNOME3 if-session gnome-fallback
++NoDisplay=true
