@@ -1,12 +1,12 @@
-DEF_SUBDIRS = icons lib applet wizard docs po
+DEF_SUBDIRS = icons lib applet wizard po
 
-SUBDIRS = icons lib applet wizard docs po
+SUBDIRS = icons lib applet wizard po
 
 EXTRA_DIST = intltool-extract.in intltool-update.in intltool-merge.in ChangeLog.pre-2.27 gtk-doc.make
 
 DISTCHECK_CONFIGURE_FLAGS = --disable-schemas-install \
 	--disable-desktop-update --disable-mime-update --disable-icon-update \
-	--enable-gtk-doc --disable-scrollkeeper --enable-introspection
+	--disable-scrollkeeper --enable-introspection
 
 DISTCLEANFILES = intltool-extract intltool-update intltool-merge
 

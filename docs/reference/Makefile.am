@@ -1,1 +1,0 @@
-SUBDIRS = libcinnamon-bluetooth

@@ -50,9 +50,6 @@ GLIB_GSETTINGS
 
 AC_PATH_PROG([XMLLINT],[xmllint])
 
-dnl gtk-doc checks
-GTK_DOC_CHECK(1.9)
-
 AC_DEFINE_UNQUOTED(LOCALEDIR, "${prefix}/share/locale", [Directory for the localization files])
 
 AC_ARG_ENABLE(desktop-update, AC_HELP_STRING([--disable-desktop-update],
@@ -149,10 +146,6 @@ AC_OUTPUT(Makefile
 	  applet/bluetooth-applet.desktop.in
 	  wizard/Makefile
 	  wizard/bluetooth-wizard.desktop.in
-	  docs/Makefile
-	  docs/reference/Makefile
-	  docs/reference/libcinnamon-bluetooth/Makefile
-	  docs/reference/libcinnamon-bluetooth/version.xml
 	  po/Makefile.in
 )
 
@@ -162,7 +155,6 @@ Configure summary:
 	Compiler....................:  ${CC}
 	Compiler Flags..............:  ${CFLAGS}
 	Prefix......................:  ${prefix}
-	Documentation...............:  ${enable_gtk_doc}
 	GObject-Introspection.......:  ${found_introspection}
 	Application Indicators......:  ${enable_appindicator}
 "
