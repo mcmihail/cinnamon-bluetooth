@@ -2,7 +2,7 @@
 _Name=Bluetooth Device Setup
 _Comment=Setup Bluetooth devices
 Icon=bluetooth
-Exec=bluetooth-wizard
+Exec=cinnamon-sbluetooth-wizard
 Terminal=false
 Type=Application
 Categories=GTK;GNOME;
