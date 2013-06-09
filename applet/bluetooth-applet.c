@@ -876,7 +876,7 @@ bluetooth_applet_create_device_from_iter (GtkTreeModel *model,
  * bluetooth_applet_get_devices:
  * @self: a #BluetoothApplet
  *
- * Returns: (element-type GnomeBluetoothApplet.SimpleDevice) (transfer full): Returns the devices which should be shown to the user
+ * Returns: (element-type CinnamonBluetoothApplet.SimpleDevice) (transfer full): Returns the devices which should be shown to the user
  */
 GList*
 bluetooth_applet_get_devices (BluetoothApplet* self)
