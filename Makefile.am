@@ -1,10 +1,6 @@
-DEF_SUBDIRS = icons lib applet wizard sendto docs po help
+DEF_SUBDIRS = icons lib applet wizard docs po
 
-SUBDIRS = icons lib applet wizard sendto docs po
-
-if ENABLE_DOCUMENTATION
-SUBDIRS += help
-endif
+SUBDIRS = icons lib applet wizard docs po
 
 EXTRA_DIST = intltool-extract.in intltool-update.in intltool-merge.in ChangeLog.pre-2.27 gtk-doc.make
 
@@ -18,10 +14,10 @@ MAINTAINERCLEANFILES = Makefile.in \
 	aclocal.m4 configure config.h.in config.sub config.guess \
 	ltmain.sh depcomp missing install-sh mkinstalldirs \
 	intltool-extract.in intltool-update.in intltool-merge.in \
-	gnome-bluetooth-1.0.pc
+	cinnamon-bluetooth-1.0.pc
 
 pkgconfigdir = $(libdir)/pkgconfig
-pkgconfig_DATA = gnome-bluetooth-1.0.pc
+pkgconfig_DATA = cinnamon-bluetooth-1.0.pc
 
 install-data-hook:
 if DESKTOP_UPDATE

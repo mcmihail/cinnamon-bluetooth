@@ -7,9 +7,9 @@
 ]>
 <book id="index">
   <bookinfo>
-    <title>gnome-bluetooth Reference Manual</title>
+    <title>cinnamon-bluetooth Reference Manual</title>
     <releaseinfo>
-      for gnome-bluetooth &version;.
+      for cinnamon-bluetooth &version;.
       The latest version of this documentation can be found on-line at
       <ulink role="online-location" url="http://library.gnome.org/devel/gnome-bluetooth/unstable/">http://library.gnome.org/devel/gnome-bluetooth/unstable/</ulink>.
     </releaseinfo>

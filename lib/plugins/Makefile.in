@@ -194,7 +194,7 @@ GETTEXT_PACKAGE = @GETTEXT_PACKAGE@
 GLIB_COMPILE_SCHEMAS = @GLIB_COMPILE_SCHEMAS@
 GMSGFMT = @GMSGFMT@
 GMSGFMT_015 = @GMSGFMT_015@
-GNOMEBT_LT_VERSION = @GNOMEBT_LT_VERSION@
+CINNAMONBT_LT_VERSION = @CINNAMONBT_LT_VERSION@
 GREP = @GREP@
 GSETTINGS_DISABLE_SCHEMAS_COMPILE = @GSETTINGS_DISABLE_SCHEMAS_COMPILE@
 GTKDOC_CHECK = @GTKDOC_CHECK@
@@ -232,8 +232,8 @@ INTROSPECTION_TYPELIBDIR = @INTROSPECTION_TYPELIBDIR@
 ITSTOOL = @ITSTOOL@
 LD = @LD@
 LDFLAGS = @LDFLAGS@
-LIBGNOMEBT_CFLAGS = @LIBGNOMEBT_CFLAGS@
-LIBGNOMEBT_LIBS = @LIBGNOMEBT_LIBS@
+LIBCINNAMONBT_CFLAGS = @LIBCINNAMONBT_CFLAGS@
+LIBCINNAMONBT_LIBS = @LIBCINNAMONBT_LIBS@
 LIBICONV = @LIBICONV@
 LIBINTL = @LIBINTL@
 LIBM = @LIBM@
@@ -348,7 +348,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-plugindir = $(libdir)/gnome-bluetooth/plugins/
+plugindir = $(libdir)/cinnamon-bluetooth/plugins/
 INCLUDES = \
         -DDATADIR=\"$(datadir)\"                \
         -DICONDIR=\"$(icondir)\"                \
@@ -356,7 +356,7 @@ INCLUDES = \
         -I$(top_srcdir)/lib			\
         -I$(top_builddir)			\
 	$(PLUGINS_CFLAGS)			\
-	$(LIBGNOMEBT_CFLAGS)			\
+	$(LIBCINNAMONBT_CFLAGS)			\
 	$(GEOCLUE_CFLAGS)			\
 	$(WARN_CFLAGS)
 
@@ -365,7 +365,7 @@ libgbtgeoclue_la_SOURCES = geoclue.c
 libgbtgeoclue_la_LDFLAGS = -module -avoid-version
 libgbtgeoclue_la_LIBADD = $(PLUGINS_LIBS) $(GEOCLUE_LIBS)
 testplugin_LTLIBRARIES = libgbttest.la
-testplugindir = $(libdir)/gnome-bluetooth/plugins/
+testplugindir = $(libdir)/cinnamon-bluetooth/plugins/
 libgbttest_la_SOURCES = test.c
 libgbttest_la_LDFLAGS = -module -avoid-version
 libgbttest_la_LIBADD = $(PLUGINS_LIBS)

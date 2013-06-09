@@ -4,12 +4,12 @@ bin_PROGRAMS = bluetooth-applet
 
 bluetooth_applet_SOURCES = main.c notify.h notify.c agent.h agent.c
 
-bluetooth_applet_LDADD = $(top_builddir)/lib/libgnome-bluetooth.la $(builddir)/libgnome-bluetooth-applet.la $(APPLET_LIBS)
+bluetooth_applet_LDADD = $(top_builddir)/lib/libcinnamon-bluetooth.la $(builddir)/libcinnamon-bluetooth-applet.la $(APPLET_LIBS)
 
 noinst_PROGRAMS = test-agentdialog test-icon
 
 test_agentdialog_SOURCES = test-agentdialog.c notify.h notify.c
-test_agentdialog_LDADD = $(builddir)/libgnome-bluetooth-applet.la $(APPLET_LIBS)
+test_agentdialog_LDADD = $(builddir)/libcinnamon-bluetooth-applet.la $(APPLET_LIBS)
 
 test_icon_SOURCES = test-icon.c notify.h notify.c
 test_icon_LDADD = $(APPLET_LIBS)

@@ -1,8 +1,8 @@
 
 
 
-#ifndef __GNOME_BLUETOOTH_ENUM_TYPES_H__
-#define __GNOME_BLUETOOTH_ENUM_TYPES_H__
+#ifndef __CINNAMON_BLUETOOTH_ENUM_TYPES_H__
+#define __CINNAMON_BLUETOOTH_ENUM_TYPES_H__
 
 #include <glib-object.h>
 
@@ -18,7 +18,7 @@ GType bluetooth_status_get_type (void);
 #define BLUETOOTH_TYPE_STATUS (bluetooth_status_get_type())
 G_END_DECLS
 
-#endif /* __GNOME_BLUETOOTH_ENUM_TYPES_H__ */
+#endif /* __CINNAMON_BLUETOOTH_ENUM_TYPES_H__ */
 
 
 

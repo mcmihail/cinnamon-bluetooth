@@ -26,32 +26,32 @@
 BluetoothKillswitch
 
 
-<!-- ##### SECTION ./tmpl/gnome-bluetooth-enum-types.sgml:Image ##### -->
+<!-- ##### SECTION ./tmpl/cinnamon-bluetooth-enum-types.sgml:Image ##### -->
 
 
 
-<!-- ##### SECTION ./tmpl/gnome-bluetooth-enum-types.sgml:Long_Description ##### -->
+<!-- ##### SECTION ./tmpl/cinnamon-bluetooth-enum-types.sgml:Long_Description ##### -->
 <para>
 
 </para>
 
 
-<!-- ##### SECTION ./tmpl/gnome-bluetooth-enum-types.sgml:See_Also ##### -->
+<!-- ##### SECTION ./tmpl/cinnamon-bluetooth-enum-types.sgml:See_Also ##### -->
 <para>
 
 </para>
 
 
-<!-- ##### SECTION ./tmpl/gnome-bluetooth-enum-types.sgml:Short_Description ##### -->
+<!-- ##### SECTION ./tmpl/cinnamon-bluetooth-enum-types.sgml:Short_Description ##### -->
 
 
 
-<!-- ##### SECTION ./tmpl/gnome-bluetooth-enum-types.sgml:Stability_Level ##### -->
+<!-- ##### SECTION ./tmpl/cinnamon-bluetooth-enum-types.sgml:Stability_Level ##### -->
 
 
 
-<!-- ##### SECTION ./tmpl/gnome-bluetooth-enum-types.sgml:Title ##### -->
-gnome-bluetooth-enum-types
+<!-- ##### SECTION ./tmpl/cinnamon-bluetooth-enum-types.sgml:Title ##### -->
+cinnamon-bluetooth-enum-types
 
 
 <!-- ##### MACRO BLUETOOTH_GET_CHOOSER_CLASS ##### -->

@@ -4,7 +4,7 @@
 # http://bugs.debian.org/563902
 # https://bugzilla.redhat.com/show_bug.cgi?id=514798
 
-ENV{ACL_MANAGE}=="0", GOTO="gnome_bluetooth_end"
-ACTION!="add|change", GOTO="gnome_bluetooth_end"
+ENV{ACL_MANAGE}=="0", GOTO="cinnamon_bluetooth_end"
+ACTION!="add|change", GOTO="cinnamon_bluetooth_end"
 KERNEL=="rfkill", TAG+="udev-acl"
-LABEL="gnome_bluetooth_end"
+LABEL="cinnamon_bluetooth_end"

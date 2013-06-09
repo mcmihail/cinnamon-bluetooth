@@ -2,7 +2,7 @@
 
 
 #include <bluetooth-enums.h>
-#include "gnome-bluetooth-enum-types.h"
+#include "cinnamon-bluetooth-enum-types.h"
 #include <glib-object.h>
 
 /* enumerations from "bluetooth-enums.h" */

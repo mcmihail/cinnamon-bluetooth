@@ -8,4 +8,4 @@ Type=Application
 Categories=
 OnlyShowIn=Unity;
 NoDisplay=true
-X-Ubuntu-Gettext-Domain=gnome-bluetooth2
+X-Ubuntu-Gettext-Domain=cinnamon-bluetooth2

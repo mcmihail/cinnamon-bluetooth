@@ -1,5 +1,5 @@
-#ifndef _GNOME_BLUETOOTH_PLUGIN_H_
-#define _GNOME_BLUETOOTH_PLUGIN_H_
+#ifndef _CINNAMON_BLUETOOTH_PLUGIN_H_
+#define _CINNAMON_BLUETOOTH_PLUGIN_H_
 
 #include <gmodule.h>
 #include <gtk/gtk.h>
@@ -23,7 +23,7 @@ typedef struct _GbtPlugin GbtPlugin;
  * @get_config_widgets: Returns the configuration widget for the passed Bluetooth address and UUIDs
  * @device_removed: Remove any configuration relating to the Bluetooth address passed
  *
- * A structure representing a gnome-bluetooth wizard and properties plugin. You should also call GBT_INIT_PLUGIN() on the plugin structure to export it.
+ * A structure representing a cinnamon-bluetooth wizard and properties plugin. You should also call GBT_INIT_PLUGIN() on the plugin structure to export it.
  **/
 struct _GbtPluginInfo 
 {
@@ -38,7 +38,7 @@ struct _GbtPluginInfo
  * @module: the #GModule for the opened shared library
  * @info: a #GbtPluginInfo structure
  *
- * A structure as used in gnome-bluetooth.
+ * A structure as used in cinnamon-bluetooth.
  **/
 struct _GbtPlugin
 {
@@ -50,7 +50,7 @@ struct _GbtPlugin
 * GBT_INIT_PLUGIN:
 * @plugininfo: a #GbtPluginInfo structure representing the plugin
 *
-* Call this on an #GbtPluginInfo structure to make it available to gnome-bluetooth.
+* Call this on an #GbtPluginInfo structure to make it available to cinnamon-bluetooth.
 **/
 #define GBT_INIT_PLUGIN(plugininfo)					\
 	gboolean gbt_init_plugin (GbtPlugin *plugin);			\
@@ -60,5 +60,5 @@ struct _GbtPlugin
 		return TRUE;						\
 	}
 
-#endif /* _GNOME_BLUETOOTH_PLUGIN_H_ */
+#endif /* _CINNAMON_BLUETOOTH_PLUGIN_H_ */
 

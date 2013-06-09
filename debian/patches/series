@@ -1,6 +1,0 @@
-01_use_app_indicator.patch
-02_gettext_macros.patch
-03_text_changes.patch
-nodisplay_autostart.patch
-start_in_classic_session.patch
-menu_update_on_rfkill.patch

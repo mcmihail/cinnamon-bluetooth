@@ -44,7 +44,7 @@
 #include "bluetooth-utils.h"
 #include "bluetooth-chooser.h"
 #include "bluetooth-chooser-private.h"
-#include "gnome-bluetooth-enum-types.h"
+#include "cinnamon-bluetooth-enum-types.h"
 #include "bluetooth-filter-widget.h"
 
 enum {

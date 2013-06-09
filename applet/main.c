@@ -50,7 +50,7 @@ static gboolean option_debug = FALSE;
 static BluetoothApplet *applet = NULL;
 static gboolean discover_lock = FALSE;
 
-#define GNOMECC			"gnome-control-center"
+#define GNOMECC			"cinnamon-settings"
 #define KEYBOARD_PREFS		GNOMECC " keyboard"
 #define MOUSE_PREFS		GNOMECC " mouse"
 #define SOUND_PREFS		GNOMECC " sound"
@@ -84,7 +84,7 @@ void quit_callback(GObject *widget, gpointer user_data)
 
 void settings_callback(GObject *widget, gpointer user_data)
 {
-	const char *command = "gnome-control-center bluetooth";
+	const char *command = "cinnamon-settings bluetooth";
 
 	if (!g_spawn_command_line_async(command, NULL))
 		g_printerr("Couldn't execute command: %s\n", command);
@@ -849,7 +849,7 @@ int main(int argc, char *argv[])
 	if (option_debug == FALSE) {
 		GError *error = NULL;
 
-		app = g_application_new ("org.gnome.Bluetooth.applet",
+		app = g_application_new ("org.cinnamon.Bluetooth.applet",
 					 G_APPLICATION_FLAGS_NONE);
 		if (!g_application_register (app, NULL, &error)) {
 			g_object_unref (app);

@@ -1,6 +1,6 @@
-# Afrikaans translation of gnome-bluetooth.
+# Afrikaans translation of cinnamon-bluetooth.
 # Copyright (C)
-# This file is distributed under the same license as the gnome-bluetooth package.
+# This file is distributed under the same license as the cinnamon-bluetooth package.
 # F Wolff <friedel@translate.org.za>, 2009, 2011.
 msgid ""
 msgstr ""

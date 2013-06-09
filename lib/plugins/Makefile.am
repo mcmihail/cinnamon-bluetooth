@@ -1,4 +1,4 @@
-plugindir = $(libdir)/gnome-bluetooth/plugins/
+plugindir = $(libdir)/cinnamon-bluetooth/plugins/
 
 INCLUDES =                                      \
         -DDATADIR=\"$(datadir)\"                \
@@ -7,7 +7,7 @@ INCLUDES =                                      \
         -I$(top_srcdir)/lib			\
         -I$(top_builddir)			\
 	$(PLUGINS_CFLAGS)			\
-	$(LIBGNOMEBT_CFLAGS)			\
+	$(LIBCINNAMONBT_CFLAGS)			\
 	$(GEOCLUE_CFLAGS)			\
 	$(WARN_CFLAGS)
 
@@ -19,7 +19,7 @@ libgbtgeoclue_la_LIBADD = $(PLUGINS_LIBS) $(GEOCLUE_LIBS)
 
 testplugin_LTLIBRARIES = libgbttest.la
 
-testplugindir = $(libdir)/gnome-bluetooth/plugins/
+testplugindir = $(libdir)/cinnamon-bluetooth/plugins/
 
 libgbttest_la_SOURCES = test.c
 libgbttest_la_LDFLAGS = -module -avoid-version

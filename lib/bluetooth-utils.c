@@ -40,7 +40,7 @@
 #include <gtk/gtk.h>
 
 #include "bluetooth-utils.h"
-#include "gnome-bluetooth-enum-types.h"
+#include "cinnamon-bluetooth-enum-types.h"
 
 /**
  * bluetooth_type_to_string:

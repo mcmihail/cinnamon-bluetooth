@@ -9,7 +9,7 @@ AUTOMAKE_OPTIONS = 1.6
 # of using the various options.
 
 # The name of the module, e.g. 'glib'.
-DOC_MODULE=gnome-bluetooth
+DOC_MODULE=cinnamon-bluetooth
 
 # Uncomment for versioned docs and specify the version of the module, e.g. '2'.
 #DOC_MODULE_VERSION=2
@@ -54,7 +54,7 @@ CFILE_GLOB=$(top_srcdir)/lib/*.c
 
 # Header files to ignore when scanning.
 # e.g. IGNORE_HFILES=gtkdebug.h gtkintl.h
-IGNORE_HFILES=bluetooth-agent.h bluetooth-client-glue.h bluetooth-client-private.h bluetooth-chooser-private.h bluetooth-killswitch.h bluetooth-filter-widget.h gnome-bluetooth-enum-types.h obex-agent.h rfkill.h
+IGNORE_HFILES=bluetooth-agent.h bluetooth-client-glue.h bluetooth-client-private.h bluetooth-chooser-private.h bluetooth-killswitch.h bluetooth-filter-widget.h cinnamon-bluetooth-enum-types.h obex-agent.h rfkill.h
 
 # Images to copy into HTML directory.
 # e.g. HTML_IMAGES=$(top_srcdir)/gtk/stock-icons/stock_about_24.png
@@ -75,7 +75,7 @@ expand_content_files=
 # e.g. GTKDOC_CFLAGS=-I$(top_srcdir) -I$(top_builddir) $(GTK_DEBUG_FLAGS)
 # e.g. GTKDOC_LIBS=$(top_builddir)/gtk/$(gtktargetlib)
 GTKDOC_CFLAGS=$(LIBGNOMEBT_CFLAGS)
-GTKDOC_LIBS=$(top_builddir)/lib/libgnome-bluetooth.la
+GTKDOC_LIBS=$(top_builddir)/lib/libcinnamon-bluetooth.la
 
 # This includes the standard gtk-doc make rules, copied by gtkdocize.
 include $(top_srcdir)/gtk-doc.make

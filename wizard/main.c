@@ -945,7 +945,7 @@ int main (int argc, char **argv)
 		return 1;
 	}
 
-	app = gtk_application_new ("org.gnome.Bluetooth.wizard", G_APPLICATION_FLAGS_NONE);
+	app = gtk_application_new ("org.cinnamon.Bluetooth.wizard", G_APPLICATION_FLAGS_NONE);
 	if (g_application_register (G_APPLICATION (app), NULL, &error) == FALSE) {
 		g_warning ("Could not register application: %s", error->message);
 		g_error_free (error);

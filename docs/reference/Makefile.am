@@ -1,1 +1,1 @@
-SUBDIRS = libgnome-bluetooth
+SUBDIRS = libcinnamon-bluetooth
