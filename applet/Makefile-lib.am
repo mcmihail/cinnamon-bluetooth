@@ -7,11 +7,11 @@ libcinnamon_bluetooth_applet_la_SOURCES = 	\
 	bluetooth-applet.c		\
 	bluetooth-applet.h
 
-libcinnamon_bluetooth_applet_la_LIBADD = $(LIBGNOMEBT_LIBS) $(top_builddir)/lib/libcinnamon-bluetooth.la
+libcinnamon_bluetooth_applet_la_LIBADD = $(LIBCINNAMONBT_LIBS) $(top_builddir)/lib/libcinnamon-bluetooth.la
 
 libcinnamon_bluetooth_applet_la_LDFLAGS = -no-undefined
 
-AM_CFLAGS = -I$(srcdir) -I$(top_srcdir)/lib $(LIBGNOMEBT_CFLAGS) $(WARN_CFLAGS) $(DISABLE_DEPRECATED)
+AM_CFLAGS = -I$(srcdir) -I$(top_srcdir)/lib $(LIBCINNAMONBT_CFLAGS) $(WARN_CFLAGS) $(DISABLE_DEPRECATED)
 
 install-exec-hook:
 	rm -f $(DESTDIR)$(pkglibdir)/libcinnamon-bluetooth-applet.la
@@ -24,14 +24,14 @@ INTROSPECTION_SCANNER_ARGS = --add-include-path=$(srcdir)
 INTROSPECTION_COMPILER_ARGS = --includedir=$(srcdir) --includedir=$(top_builddir)/lib
 
 if HAVE_INTROSPECTION
-GnomeBluetoothApplet-1.0.gir: libcinnamon-bluetooth-applet.la
-GnomeBluetoothApplet_1_0_gir_SCANNERFLAGS = --warn-all --symbol-prefix=bluetooth_ --identifier-prefix=Bluetooth --include-uninstalled=$(top_builddir)/lib/GnomeBluetooth-1.0.gir
-GnomeBluetoothApplet_1_0_gir_INCLUDES = GObject-2.0 Gtk-3.0 GModule-2.0
-GnomeBluetoothApplet_1_0_gir_PACKAGES = gobject-2.0 gtk+-3.0 gmodule-2.0 glib-2.0
-GnomeBluetoothApplet_1_0_gir_CFLAGS = -I$(srcdir) -I$(top_srcdir) -I$(top_srcdir)/lib
-GnomeBluetoothApplet_1_0_gir_LIBS = libcinnamon-bluetooth-applet.la
-GnomeBluetoothApplet_1_0_gir_FILES = $(libcinnamon_bluetooth_applet_la_SOURCES) ../lib/bluetooth-enums.h
-INTROSPECTION_GIRS += GnomeBluetoothApplet-1.0.gir
+CinnamonBluetoothApplet-1.0.gir: libcinnamon-bluetooth-applet.la
+CinnamonBluetoothApplet_1_0_gir_SCANNERFLAGS = --warn-all --symbol-prefix=bluetooth_ --identifier-prefix=Bluetooth --include-uninstalled=$(top_builddir)/lib/CinnamonBluetooth-1.0.gir
+CinnamonBluetoothApplet_1_0_gir_INCLUDES = GObject-2.0 Gtk-3.0 GModule-2.0
+CinnamonBluetoothApplet_1_0_gir_PACKAGES = gobject-2.0 gtk+-3.0 gmodule-2.0 glib-2.0
+CinnamonBluetoothApplet_1_0_gir_CFLAGS = -I$(srcdir) -I$(top_srcdir) -I$(top_srcdir)/lib
+CinnamonBluetoothApplet_1_0_gir_LIBS = libcinnamon-bluetooth-applet.la
+CinnamonBluetoothApplet_1_0_gir_FILES = $(libcinnamon_bluetooth_applet_la_SOURCES) ../lib/bluetooth-enums.h
+INTROSPECTION_GIRS += CinnamonBluetoothApplet-1.0.gir
 
 typelibdir = $(pkglibdir)
 typelib_DATA = $(INTROSPECTION_GIRS:.gir=.typelib)

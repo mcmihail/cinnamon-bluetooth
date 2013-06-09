@@ -143,9 +143,9 @@ AC_OUTPUT(Makefile
 	  lib/Makefile
 	  lib/plugins/Makefile
 	  applet/Makefile
-	  applet/bluetooth-applet.desktop.in
+	  applet/cinnamon-bluetooth-applet.desktop.in
 	  wizard/Makefile
-	  wizard/bluetooth-wizard.desktop.in
+	  wizard/cinnamon-bluetooth-wizard.desktop.in
 	  po/Makefile.in
 )
 
