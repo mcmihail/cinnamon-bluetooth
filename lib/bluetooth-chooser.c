@@ -110,7 +110,7 @@ bonded_to_icon (GtkTreeViewColumn *column, GtkCellRenderer *cell,
 
 	gtk_tree_model_get (model, iter, BLUETOOTH_COLUMN_PAIRED, &bonded, -1);
 
-	g_object_set (cell, "icon-name", bonded ? "bluetooth-paired" : NULL, NULL);
+	g_object_set (cell, "icon-name", bonded ? "cinnamon-bluetooth-paired" : NULL, NULL);
 }
 
 static void

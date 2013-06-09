@@ -34,8 +34,8 @@
 #endif /* HAVE_APP_INDICATOR */
 #include "notify.h"
 
-#define ACTIVE_ICON_NAME "bluetooth-active"
-#define DISABLE_ICON_NAME "bluetooth-disabled"
+#define ACTIVE_ICON_NAME "cinnamon-bluetooth-active"
+#define DISABLE_ICON_NAME "cinnamon-bluetooth-disabled"
 
 #ifdef HAVE_APP_INDICATOR
 static AppIndicator *indicator = NULL;
