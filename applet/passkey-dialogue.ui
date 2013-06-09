@@ -5,11 +5,11 @@
   <object class="GtkImage" id="image1">
     <property name="visible">True</property>
     <property name="icon_size">6</property>
-    <property name="icon_name">bluetooth-paired</property>
+    <property name="icon_name">cinnamon-bluetooth-paired</property>
   </object>
   <object class="GtkMessageDialog" id="dialog">
     <property name="border_width">5</property>
-    <property name="icon_name">bluetooth</property>
+    <property name="icon_name">cinnamon-bluetooth</property>
     <property name="type_hint">normal</property>
     <property name="skip_taskbar_hint">True</property>
     <property name="message_type">other</property>

@@ -1,7 +1,7 @@
 [Desktop Entry]
 _Name=Bluetooth Manager
 _Comment=Bluetooth Manager applet
-Icon=bluetooth
+Icon=cinnamon-bluetooth
 Exec=bluetooth-applet
 Terminal=false
 Type=Application
