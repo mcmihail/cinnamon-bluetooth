@@ -5,7 +5,7 @@
 Source: cinnamon-bluetooth
 Section: gnome
 Priority: optional
-Maintainer: Michael Webster <miketwebster@gmail.com>
+Maintainer: Linux Mint <root@linuxmint.com>
 Build-Depends: debhelper (>= 8),
                cdbs (>= 0.4.93),
                dh-autoreconf,
